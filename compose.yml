@@ -8,6 +8,7 @@ services:
     ports:
       - "8888:8888" # Jupyter UI
       - "4040:4040" # Spark UI. Every new context is on an incremental port (4041, 4042, etc)
+      - "4050:4050"      
     volumes:
       - "./work/data:/home/jovyan/data"  # Data directory
       - "./notebooks:/home/jovyan/notebooks"  # Notebooks directory
